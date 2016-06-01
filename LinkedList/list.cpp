@@ -1,5 +1,6 @@
 #include <iostream>
 #include<stack>
+#include<cstdlib>
 
 using namespace std;
 struct Node{
@@ -222,6 +223,7 @@ void deleteDuplicate(Node **head){
   }
   Node *ptr = (*head)->next;
   Node *prev = *head;
+  Node *temp;
   while (ptr!=NULL) {
     if (ptr->data == prev->data) {
       prev->next = ptr->next;
@@ -230,9 +232,90 @@ void deleteDuplicate(Node **head){
       free(temp);
     } else{
       ptr = ptr->next;
-      prev = pre->next;
+      prev = prev->next;
     }
   }
+}
+void deleteDuplicateFromUnsorted(Node *head) {
+  if (head == NULL) {
+    return;
+  }
+  Node *ptr1 = head;
+  Node *ptr2,*prev;
+  while (ptr1!=NULL) {
+    ptr2 = ptr1->next;
+    prev = ptr1;
+    while (ptr2!=NULL) {
+      if (ptr2->data == ptr1->data) {
+        prev->next = ptr2->next;
+        ptr2 = ptr2->next;
+      } else{
+        ptr2 = ptr2->next;
+        prev = prev->next;
+      }
+    }
+    ptr1 = ptr1->next;
+  }
+}
+
+Node * mergeSortOfList(Node *first){
+  if (first->next == NULL) {
+    return first;
+  }
+  // break into two
+  Node * ptr = first->next;
+  Node * slow = first;
+  while (ptr != NULL && ptr->next != NULL) {
+    ptr = ptr->next->next;
+    slow = slow->next;
+  }
+  Node *nextList = slow->next;
+  slow->next = NULL;
+
+  Node *a = mergeSortOfList(first);
+  Node *b = mergeSortOfList(nextList);
+  Node *newHead = NULL;
+  Node *curr = NULL,*tail =NULL;
+  while ( a != NULL && b!=NULL) {
+    if (a->data < b->data) {
+      curr = a;
+      a = a->next;
+    } else{
+      curr = b;
+      b = b->next;
+    }
+    if (newHead == NULL) {
+      newHead = curr;
+      tail = newHead;
+    } else{
+      tail->next = curr;
+      tail = tail->next;
+    }
+  }
+  while (a!=NULL) {
+    curr = a;
+    if (newHead == NULL) {
+      newHead = curr;
+      tail = newHead;
+    } else{
+      tail->next = curr;
+      tail = tail->next;
+    }
+    a= a->next;
+  }
+  while (b!=NULL) {
+    curr = b;
+    if (newHead == NULL) {
+      newHead = curr;
+      tail = newHead;
+    } else{
+      tail->next = curr;
+      tail = tail->next;
+    }
+    b = b->next;
+  }
+  tail->next = NULL;
+  return newHead;
 }
 
 int main(){
@@ -255,6 +338,10 @@ int main(){
   // print(head);
   // reverse(&head);
   print(head);
-  palindrome(head);
-  palindromeRecursive(head);
+  // palindrome(head);
+  // palindromeRecursive(head);
+  // deleteDuplicateFromUnsorted(head);
+  // print(head);
+  head = mergeSortOfList(head);
+  print(head);
 }
