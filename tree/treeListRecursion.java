@@ -1,5 +1,5 @@
 import java.util.*;
-abstract class TreeDLL {
+abstract class TreeListRecursion {
 
   public static void main(String[] args) {
     Node root = new Node(1);
@@ -10,18 +10,12 @@ abstract class TreeDLL {
     root.right.left = new Node(6);
     root.right.right = new Node(7);
     root.right.right.right = new Node(22);
-
+    
 
   }
  
   public static void inorder(Node root){
-    if (root == null) {
-      return;
-    }
-    inorder(root.left);
-    root.left = prev;
-    prev = root;
-    inorder(root.right);
+
 
   }
 }
