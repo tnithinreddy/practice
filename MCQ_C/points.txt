@@ -1,0 +1,22 @@
+1) best practise for main() is
+	int main(){
+		return 0; // in c++ return 0; added if not present(also return type is added if not present)
+				  // gcc accepts with or with out int as return type, infact void is also not giving 
+				  // error
+	}
+
+	in C++ (g++) its compulsory, main()  without int as return will give error
+
+2) g++ ==== gcc with special flags
+3) g++ will treat all files as c++, where as gcc treats each one separately
+4)g++ will link the standard c++ files automatiacally, where as gcc doesn't do it, we need to mention explicitly using command line options
+5)both are actually same at the back but the interface is different
+6)g++ add few extra predefined MACROS
+7)in c++ and c
+	fun(void){} will not accept any arguments
+  where as in c
+    fun(){} will accept any number of arugments
+8) C function need not have a return statement even if it's of int returning function, but in c++ its compulsory
+9) function need not mention return type in c, in c++ its compulsory
+
+

@@ -17,15 +17,19 @@
 // }
 ////////////
 
-#include <stdio.h>
-
+//http://www.geeksforgeeks.org/printing-longest-common-subsequence/
+//http://www.geeksforgeeks.org/longest-monotonically-increasing-subsequence-size-n-log-n/
 int main()
 {
     // void *x[9]; // size of
     // printf("%d\n", sizeof(&x));
     char str[5];
-    scanf("%s\n", str);
-    printf("%s\n", str);
+    int x = 10;
+    int *ptr = &x;
+    int j = 20;
+    int y = x++ + ++x + x++;
+    printf("y = %d \n",y);
+    printf("%d %d %d %d\n", x++,x++,x++,++x);
     return 0;
 }
 ///////////

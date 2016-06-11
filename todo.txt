@@ -1,0 +1,47 @@
+Aptitude:
+	
+
+Technical - MCQ (c,c++, java, CNS, DBMS, OS, SEN)
+1) Arrays and pointers in C and C++
+2) OOP concepts in Java
+3) MCQ on all data structures in GFG(array, link list http://geeksquiz.com/data-structure/linked-list/)
+
+Algorithms and Data Structures:
+1) Geeksforgeeks
+
+2) CodeChef or hackerrank
+
+Previous Interview questions
+
+Resume and job description
+
+TODO:
+0) Red black tree deletion, b-tree insertion deletion,search(https://www.cs.usfca.edu/~galles/visualization/RedBlack.html)
+1)Max path sum 
+2) leaf to leaf path sum 
+3) given traversal form a tree , iterative post order and preorder and inorder
+4) bottom view, top view, left view and right view
+5) lowest common ancestor  in binary tree and BST
+6)http://www.geeksforgeeks.org/swap-kth-node-from-beginning-with-kth-node-from-end-in-a-linked-list/
+7)http://cslibrary.stanford.edu/109/TreeListRecursion.html
+8)http://geeksquiz.com/linked-list-in-java/
+9)http://www.geeksforgeeks.org/quicksort-on-singly-linked-list/
+10)http://www.geeksforgeeks.org/detect-and-remove-loop-in-a-linked-list/
+11)http://www.geeksforgeeks.org/pairwise-swap-elements-of-a-given-linked-list-by-changing-links/
+12)http://www.geeksforgeeks.org/design-a-stack-that-supports-getmin-in-o1-time-and-o1-extra-space/
+13)http://www.geeksforgeeks.org/tournament-tree-and-binary-heap/
+14)http://www.geeksforgeeks.org/check-for-identical-bsts-without-building-the-trees/
+15)http://www.geeksforgeeks.org/construct-bst-from-given-preorder-traversal-set-2/
+16)http://www.geeksforgeeks.org/construct-bst-from-given-preorder-traversa/
+17)http://www.geeksforgeeks.org/construct-all-possible-bsts-for-keys-1-to-n/
+
+
+// DP
+1) http://www.geeksforgeeks.org/minimum-positive-points-to-reach-destination/
+
+//
+file:///home/nithin/Desktop/geeks/DP/Dynamic%20Programming%20_%20Set%208%20(Matrix%20Chain%20Multiplication)%20-%20GeeksforGeeks.html
+http://www.practice.geeksforgeeks.org/tag-page.php?tag=dp&isCmp=0
+http://www.practice.geeksforgeeks.org/editorial.php?pid=772
+//heap
+1)http://www.geeksforgeeks.org/convert-min-heap-to-max-heap/
