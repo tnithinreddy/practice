@@ -40,8 +40,5 @@ TODO:
 1) http://www.geeksforgeeks.org/minimum-positive-points-to-reach-destination/
 
 //
-file:///home/nithin/Desktop/geeks/DP/Dynamic%20Programming%20_%20Set%208%20(Matrix%20Chain%20Multiplication)%20-%20GeeksforGeeks.html
 http://www.practice.geeksforgeeks.org/tag-page.php?tag=dp&isCmp=0
 http://www.practice.geeksforgeeks.org/editorial.php?pid=772
-//heap
-1)http://www.geeksforgeeks.org/convert-min-heap-to-max-heap/
