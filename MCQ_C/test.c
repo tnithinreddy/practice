@@ -1,6 +1,7 @@
 // http://www.cc.iitd.ernet.in/cgi-bin/proxy.mtech
 
 #include <stdio.h>
+#include<bool.h
 //
 // int main()
 // {
@@ -23,6 +24,8 @@ int main()
 {
     // void *x[9]; // size of
     // printf("%d\n", sizeof(&x));
+    bool t = true;
+    printf("pow(2,3) = %d\n", t );
     char str[5];
     int x = 10;
     int *ptr = &x;

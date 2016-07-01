@@ -1,0 +1,23 @@
+
+1)given a Products table, find all products which have price above average price
+
+select price,productName from (
+ select avg(price) as average from products
+) s 
+inner join products on products.price > average
+
+
+give the details of the employees who place more than 20 orders
+
+2)select * from employees inner join (select employeeID from orders group by employeeID having count(employeeID) > 20) emp on emp.employeeID= employees.employeeID
+
+2)https://technet.microsoft.com/en-us/library/ms187731(v=sql.110).aspx
+3)http://stackoverflow.com/questions/6319183/aggregate-function-in-sql-where-clause
+4)http://quiz.geeksforgeeks.org/having-vs-where-clause/
+5)https://en.wikipedia.org/wiki/Join_(SQL)#Inner_join
+http://users.abo.fi/soini/divisionEnglish.pdf
+https://en.wikipedia.org/wiki/Relational_algebra	
+https://en.wikipedia.org/wiki/Tuple_relational_calculus
+
+book 
+https://drive.google.com/file/d/0By8B-hms3_U_dG9LblhLcDlBVEU/view

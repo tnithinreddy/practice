@@ -1,0 +1,51 @@
+links: http://www.javatpoint.com/
+
+Give a look at threading
+array vs vector in java(like wise compare others)
+////////////////////////////////////////////////////////////////////////////////////////
+PriorityQueue
+http://stackoverflow.com/questions/6065710/how-does-javas-priorityqueue-differ-from-a-min-heap-if-no-difference-then-why
+http://www.tutorialspoint.com/java/util/java_util_priorityqueue.htm
+
+
+PriorityQueue<Integer> minHeap = new PriorityQueue<Integer>();
+public class MyComparator implements Comparator<Integer>{
+	public int compare(Integer x, Integer y){
+		return y-x;
+	}
+}
+
+PriorityQueue<Integer> maxHeap = new PriorityQueue<Integer>(initialSize,new MyComparator());
+
+minHeap.size() // returns the size of the heap
+minHeap.add(1);
+minHeap.peek(); // just return the minimum element
+minHeap.poll(); // returns and removes the minimum element
+Object[] elements = minHeap.toArray();
+for(Object i:elements){
+	int value = ((Integer)i).toValue();
+	System.out.println(value);
+}
+
+
+// create arr1
+Integer[] arr1 = new Integer[k];
+      
+// use toArrsy() method
+Integer[] arr2 = prq.toArray(arr1); // after this arr1 will also contain the heap elements
+
+////////////////////////////////////////////////////////////////////////////////////////
+
+links- java basics and fundas
+
+http://www.tutorialspoint.com/java/java_access_modifiers.htm
+http://www.javatpoint.com/access-modifiers
+http://www.wideskills.com/java-tutorial/introduction-to-java-access-modifiers
+http://www.javatpoint.com/package
+http://www.tutorialspoint.com/java/java_overriding.htm
+http://stackoverflow.com/questions/2475259/can-i-override-and-overload-static-methods-in-java
+http://docs.oracle.com/javase/tutorial/java/IandI/override.html
+http://geekexplains.blogspot.in/2008/06/can-you-override-static-methods-in-java.html
+http://stackoverflow.com/questions/70324/java-inner-class-and-static-nested-class?rq=1
+http://docs.oracle.com/javase/tutorial/java/javaOO/nested.html
+http://stackoverflow.com/questions/20468856/is-it-true-that-every-inner-class-requires-an-enclosing-instance

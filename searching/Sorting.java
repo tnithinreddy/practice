@@ -1,30 +1,60 @@
 public class Sorting{
 	public static void main(String[] args){
-		int a[] = {64, 25, 12, 22, 11};
+		// int a[] = {64, 25, 12, 22, 11};
+		int a[] = {1, 20, 6, 4, 5};
 
 		// bubbleSort(a,a.length);
 		// selectionSort(a,a.length);
 		int b[] = new int[a.length];
-		mergeSort(a,b,0,a.length-1);
-		print(a);
-		// insertionSort(a,a.length);
+		// System.out.println("Inversion Count " + mergeSort(a,b,0,a.length-1));
 
-		// System.out.println("found at " + index);
+		// insertionSort(a,a.length);
+		quickSort(a,0,a.length-1);
+		print(a);
+		
 
 
 	}
 
-	public static void mergeSort(int a[],int b[], int left, int right){
-		if (left >= right) {
+	public static int partition(int a[], int beg, int end){
+		int pivot = a[end];
+		int i = beg-1,t;
+		for (int j = beg; j < end ; j++) {
+			if (a[j] <= pivot) {
+				i++;
+				t = a[i];
+				a[i] = a[j];
+				a[j] = t;
+			}
+		}
+		t = a[i+1];
+		a[i+1] = a[end];
+		a[end] = t;
+		return i+1;
+	}
+
+	public static void quickSort(int a[],int beg,int end){
+		if (beg < 0 || beg >= end) {
 			return;
+		}
+		int p = partition(a,beg,end);
+		quickSort(a,beg,p-1);
+		quickSort(a,p+1,end);
+
+	}
+
+	public static int mergeSort(int a[],int b[], int left, int right){
+		if (left >= right) {
+			return 0;
 		}
 		int mid = left+right;
 		mid/= 2;
-		mergeSort(a,b,left,mid);
-		mergeSort(a,b,mid+1,right);
+		int leftCount = mergeSort(a,b,left,mid);
+		int rightCount = mergeSort(a,b,mid+1,right);
 		int i = left;
 		int j = mid+1;
 		int resIndex = left;
+		int count = 0;
 		while(i<=mid && j<=right){
 			if (a[i] == a[j]) {
 				b[resIndex++] = a[i];
@@ -34,6 +64,7 @@ public class Sorting{
 			}else{
 				if (a[i] > a[j]) {
 					b[resIndex++] = a[j];
+					count = count + (mid-i+1);
 					j++;
 				}else{
 					b[resIndex++] = a[i];
@@ -51,6 +82,7 @@ public class Sorting{
 			a[left] = b[left];
 			left++;
 		}
+		return count + leftCount + rightCount;
 	}
 
 	public static void bubbleSort(int a[], int n){

@@ -38,7 +38,53 @@ TODO:
 
 // DP
 1) http://www.geeksforgeeks.org/minimum-positive-points-to-reach-destination/
+2)http://www.geeksforgeeks.org/smallest-subarray-with-given-gcd/
+3)http://www.geeksforgeeks.org/count-number-of-subsets-having-a-particular-xor-value/
 
 //
 http://www.practice.geeksforgeeks.org/tag-page.php?tag=dp&isCmp=0
 http://www.practice.geeksforgeeks.org/editorial.php?pid=772
+
+// searching
+http://www.geeksforgeeks.org/search-an-element-in-a-sorted-and-pivoted-array/
+http://www.geeksforgeeks.org/find-k-closest-elements-given-value/
+http://www.geeksforgeeks.org/lower-bound-on-comparison-based-sorting-algorithms/
+Searching
+
+TODAY:
+1)1-2 hours on printing hashmap (sorted,order of insertion)
+2)ArrayList vs LinkedList
+3)Implementation of all containers, and which one to use
+
+Graph:
+1) finish all basic algorithms of graph
+2) code them
+https://www.topcoder.com/community/data-science/data-science-tutorials/disjoint-set-data-structures/
+http://www.tutorialspoint.com/java/util/collections_disjoint.htm
+http://docs.oracle.com/javase/6/docs/api/java/util/Collections.html
+
+http://www.geeksforgeeks.org/find-paths-from-corner-cell-to-middle-cell-in-maze/
+
+Pattern searching
+http://www.geeksforgeeks.org/find-orientation-of-a-pattern-in-a-matrix/
+
+Aptitude
+http://www.careerarm.com/437-quantitative-aptitude-formulas-shortcuts/
+
+prime factors:
+http://www.geeksforgeeks.org/print-all-prime-factors-of-a-given-number/
+
+suffix array
+http://web.stanford.edu/class/cs97si/suffix-array.pdf
+
+maths
+http://quiz.geeksforgeeks.org/c-program-for-tower-of-hanoi/
+http://www.geeksforgeeks.org/pascal-triangle/
+
+union find
+http://www.geeksforgeeks.org/union-find/
+master theroem
+http://www.csd.uwo.ca/~moreno//CS424/Ressources/master.pdf
+graph
+file:///home/nithin/Downloads/Week5.pdf
+http://www.geeksforgeeks.org/bridge-in-a-graph/

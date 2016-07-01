@@ -1,0 +1,48 @@
+C++ 
+Scope:
+
+1)All global variables are initialized to 0 and exist for the entire program duration also know as static storage
+2) automatic storage is used for local variable in function scope, variables with automatic storage are not initialized to 0 if they are not initailized explitly
+
+Namespace:
+1)name spaces can be nested
+2)using namespace namespace_1 in a block of code will have its validity in the entire code block
+3)classes can be declared and defined inside namespace, also declared in namespace and defined else where using the namespace_name::classname::functionName()
+4)The storage for variables with global or namespace scope is allocated for the entire duration of the program(static storage, so initialized to 0)
+5)
+#include <iostream>
+ 
+int x = 20;
+namespace outer {
+  int x = 10;         
+  namespace inner {
+    int z = x; // this x refers to outer::x
+  }
+}
+ 
+int main()
+{
+  std::cout<<outer::inner::z; //prints 10
+  getchar();
+  return 0;
+}
+
+http://www.cplusplus.com/doc/tutorial/namespaces/
+http://www.geeksforgeeks.org/g-fact-62/
+http://www.geeksforgeeks.org/namespace-in-c/ (only for c++)
+
+Strings
+
+Iterators:
+#include <iostream>
+#include <string>
+
+int main ()
+{
+  std::string str ("Test string");
+  for ( std::string::iterator it=str.begin(); it!=str.end(); ++it)
+    std::cout << *it;
+  std::cout << '\n';
+
+  return 0;
+}
